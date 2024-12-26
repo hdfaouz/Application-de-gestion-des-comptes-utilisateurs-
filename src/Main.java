@@ -8,10 +8,10 @@ public class Main {
         do {
             System.out.println("************************Menu********************");
             System.out.println("1-Ajoutter un utilisateur : ");
-            System.out.println("2-Rechercher un utilisateur : ");
+            System.out.println("2-Afficher  : ");
             System.out.println("3-Modifier les informations d'un utilisateur :");
             System.out.println("4-Supprimer un utilisateur :");
-            System.out.println("5-Afficher tous les roles d'utulisateurs :");
+            System.out.println("5-Rechercher :");
             System.out.println("6-quitter :");
             System.out.println("entrer un choix entre 1 et 6 : ");
             Scanner scanner = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class Main {
                     pers.Ajoutter();
                     break;
                 case 2:
-                    //pers.rechercher();
+                    pers.Afficher();
                     break;
                 case 3:
                     //Personne.modifier();
@@ -30,7 +30,8 @@ public class Main {
                     //Personne.afficher();
                     break;
                 case 5:
-                    //Personne.afficher();
+                    //pers.rechercher();
+
                     break;
                 case 6:
                     System.out.println("tu finis le programme :");

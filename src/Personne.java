@@ -1,12 +1,12 @@
 public class Personne {
 
-        private String id;
-        private String nom;
-        private String prenom;
-        private int age;
+         String id;
+         String nom;
+         String prenom;
+         int age;
 
 
-        public Personne(String id,String nom,String prenom,int age,String role) {
+        public Personne(String id,String nom,String prenom,int age) {
             this.id = id;
             this.nom = nom;
             this.prenom = prenom;

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Serv {
-    ArrayList<Personne> users = new ArrayList<Personne>();
+    ArrayList<Utilisateur> users = new ArrayList<>();
     Scanner scanner = new Scanner(System.in);
 
     void Ajoutter() {
@@ -13,17 +13,24 @@ public class Serv {
         String nom = scanner.nextLine();
         System.out.println("entrer le prenome : ");
         String prenom = scanner.nextLine();
-        System.out.println("entre l'age :");
+        System.out.println("entre l'age : ");
         int age = scanner.nextInt();
-        System.out.println("entrer le role : ");
-        String role = scanner.nextLine();
-        System.out.println("entre votre email");
+        System.out.println("entre votre email : ");
         String email= scanner.nextLine();
-        System.out.println("entrer le mdPas");
+        scanner.nextLine();
+        System.out.println("entrer le mdPas : ");
         String mdPas =scanner.nextLine();
-        users.add(new Utilisateur(id,nom,prenom,age,role,email,mdPas));
+        System.out.println("entrer le role : \n 1.administrateur \n 2.Client \n 3.Employé\n ");
+        String role = scanner.nextLine();
+        Role roleNam = new Role(role);
+        users.add(new Utilisateur(id,nom,prenom,age,roleNam,email,mdPas));
     }
+    void Afficher() {
+        for (Utilisateur information : users) {
+            System.out.println(information);
+        }
 
 
+    }
 }
 
