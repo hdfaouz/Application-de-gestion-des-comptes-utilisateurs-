@@ -27,7 +27,7 @@ public class Main {
                     pers.Rechercher();
                     break;
                 case 4:
-                    //Personne.afficher();
+                    pers.supprimer();
                     break;
                 case 5:
                     //pers.rechercher();
@@ -39,12 +39,6 @@ public class Main {
                 default:
                     System.out.println("tu as fini le programme ");
             }
-
-
-
-
-
-
 
         }
         while (choix !=6);

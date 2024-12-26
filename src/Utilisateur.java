@@ -21,6 +21,10 @@ public class Utilisateur extends Personne {
                 "email= " + email + "\n" +
                 "mdPas= " + mdPas + '\n' +
                 "role= " + role.getRoleNam()+ '\n'+
+
+
+
+
                 '}';
 
     }
