@@ -30,6 +30,17 @@ public class Serv {
             System.out.println(information);
         }
 
+    }
+    void Rechercher() {
+        System.out.println("entrer l'id :");
+        String id=scanner.nextLine();
+        for(Utilisateur user : users){
+            if(user.getId().equals(id)) {
+                System.out.println(user);
+                return;
+            }
+        }
+        System.out.println("utilisateur non trouvé");
 
     }
 }
