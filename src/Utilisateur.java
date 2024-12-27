@@ -3,7 +3,31 @@ public class Utilisateur extends Personne {
     private String mdPas;
      Role role;
 
-    public Utilisateur(String id, String nom, String prenom, int age,Role role, String email, String mdPas) {
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getMdPas() {
+        return mdPas;
+    }
+
+    public void setMdPas(String mdPas) {
+        this.mdPas = mdPas;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+    public Utilisateur(String id, String nom, String prenom, int age, Role role, String email, String mdPas) {
         super(id, nom, prenom, age);
         this.email = email;
         this.mdPas = mdPas;

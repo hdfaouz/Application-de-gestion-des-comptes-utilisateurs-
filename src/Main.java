@@ -30,7 +30,7 @@ public class Main {
                     pers.supprimer();
                     break;
                 case 5:
-                    //pers.rechercher();
+                    pers.Modifier();
 
                     break;
                 case 6:
